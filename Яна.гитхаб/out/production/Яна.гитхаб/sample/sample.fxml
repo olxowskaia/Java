@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -8,22 +13,48 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
-         <children>
-            <Label text="Label" />
-         </children></FlowPane>
-      <AnchorPane prefHeight="109.0" prefWidth="99.0" GridPane.rowIndex="1" />
+      <Label layoutX="196.0" layoutY="61.0" text="NBA Management System">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="111.0" text="Welcome to use this NBA Management system, you can" />
+      <ImageView fitHeight="187.0" fitWidth="95.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/imgonline-com-ua-Resize-hOEdAddLjXuDsfq.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="134.0" text=" redirect to different pages according to your role by clicking the buttons bellow." />
+      <Button layoutX="183.0" layoutY="212.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="82.0" text="Visitor">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#0934e0" />
+                  <Stop color="#5a00f5" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button layoutX="333.0" layoutY="212.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="82.0" text="Admin" textFill="#2605f5" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="117.0" layoutX="150.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="304.0" />
+      <ScrollBar layoutX="8.0" layoutY="305.0" prefHeight="91.0" prefWidth="589.0" />
+      <ImageView fitHeight="91.0" fitWidth="131.0" layoutX="52.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="91.0" fitWidth="169.0" layoutX="49.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/nba2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="175.0" layoutX="215.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/nba.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="162.0" layoutX="415.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/nba.3.jpg" />
+         </image>
+      </ImageView>
    </children>
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
-</GridPane>
+</Pane>
